@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/antikytheraton/cafeBot#readme",
   "dependencies": {
-    "bootbot": "^1.0.12"
+    "bootbot": "^1.0.12",
+    "request": "^2.81.0"
   }
 }
