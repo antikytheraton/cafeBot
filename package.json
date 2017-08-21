@@ -1,0 +1,25 @@
+{
+  "name": "cafebot",
+  "version": "1.0.0",
+  "description": "Chatbot for Coffe controll",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antikytheraton/cafeBot.git"
+  },
+  "keywords": [
+    "coffe"
+  ],
+  "author": "Aaron Arredondo Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antikytheraton/cafeBot/issues"
+  },
+  "homepage": "https://github.com/antikytheraton/cafeBot#readme",
+  "dependencies": {
+    "bootbot": "^1.0.12"
+  }
+}
