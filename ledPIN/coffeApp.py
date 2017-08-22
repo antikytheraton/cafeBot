@@ -12,6 +12,14 @@ GPIO.setup(LIGHT, GPIO.OUT)
 def hello():
     return "I'm coffeBot!! :)"
 
+@app.route("/makeCoffe", methods=['POST'])
+def makeCoffe():
+    GPIO.output(LIGHT, True)
+    time.sleep(2)
+    GPIO.output(LIGHT, False)
+    print("making your coffe")
+    return "Making your coffe"
+
 @app.route("/ledON", methods=['POST'])
 def ledON():
     GPIO.output(LIGHT, True)
@@ -21,16 +29,6 @@ def ledON():
 def ledOFF():
     GPIO.output(LIGHT, False)
     return "You turned OFF the LED"
-
-@app.route("/blink", methods=['POST'])
-def blink():
-    while True:    
-        GPIO.output(LIGHT, True)
-        time.sleep(0.5)
-        #print("Led ON")
-        GPIO.output(LIGHT, False)
-        time.sleep(0.5)
-        #print("Led OFF")
 
 if __name__ == "__main__":
     app.run(
