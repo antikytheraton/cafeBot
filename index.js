@@ -3,9 +3,9 @@ const BootBot = require('bootbot');
 const request = require('request');
 
 const bot = new BootBot({
-  accessToken: 'EAAEiGPuQ5ywBACFvHYBZAl0UaJFBy5CZAdvEMkCOiZBO6dzeBjLxIP7Xq8P8qvSUlF7RzkyCFnwiq7xyVZBkU5oTnfDhyClWjQetVRwySTNJLP6ZBcB9Mlbo09Hl82r7ZCLrGauXt04ZAoWVW6JNHQUe8FoZAzl64bB4NKfCQDv9csQI4yugra3t',
-  verifyToken: 'un cafe papu',
-  appSecret: '14080078491f6e5e5feb0429ced912e8'
+  accessToken: 'ACCESS_TOKEN',
+  verifyToken: 'VERIFY_TOKEN',
+  appSecret: 'APP_SECRET'
 });
 
 bot.hear([/(hola|holi|hello|hi)( bot| chatbot| amigo| papu)?/i], (payload, chat) => {
